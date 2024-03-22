@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const NavItem = ({ label, icon, isActive, onClick, to }) => {
+const NavItem = ({ label, icon, isActive, onClick }) => {
   return (
     <div
       className="relative group flex flex-row items-center cursor-pointer"

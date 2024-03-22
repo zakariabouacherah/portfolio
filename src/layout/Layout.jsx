@@ -18,8 +18,8 @@ const Layout = () => {
 
   return (
     <div className={`${darkMode && "dark"} `}>
-      <div className=" bg-neutral-200 dark:bg-neutral-900">
-        <div className="absolute bottom-0 lg:top-0 lg:right-0">
+      <div className=" bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200">
+        <div className="fixed bottom-0 lg:top-0 lg:right-0">
           <Navigation
             darkMode={darkMode}
             toggleDarkMode={toggleDarkMode}
