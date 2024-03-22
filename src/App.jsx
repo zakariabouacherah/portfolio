@@ -1,13 +1,20 @@
+import { useState } from "react";
 import "./App.css";
 import Layout from "./layout/Layout";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Layout>
-        <Hero />
-        {/* <div className="text-black dark:text-neutral-300">Hello World</div> */}
+        <Router>
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Router>
       </Layout>
     </>
   );

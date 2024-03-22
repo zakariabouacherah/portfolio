@@ -1,19 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
+import Hero from "../sections/Hero";
+import About from "../sections/About";
 
-const Layout = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+const Layout = () => {
+  const [darkMode, setDarkMode] = useState(true);
+  const [activeSection, setActiveSection] = useState("hero");
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
+  const handleButtonClick = (section) => {
+    window.localStorage.setItem("section", section);
+    setActiveSection(section);
+  };
+  console.log(activeSection);
+
   return (
     <div className={`${darkMode && "dark"} `}>
-      <div className=" bg-neutral-200 dark:bg-neutral-800">
-        <div className="absolute top-0 right-0">
-          <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <div className=" bg-neutral-200 dark:bg-neutral-900">
+        <div className="absolute bottom-0 lg:top-0 lg:right-0">
+          <Navigation
+            darkMode={darkMode}
+            toggleDarkMode={toggleDarkMode}
+            activeSection={activeSection}
+            handleButtonClick={handleButtonClick}
+          />
         </div>
-        {children}
+        {activeSection === "hero" && <Hero />}
+        {activeSection === "about" && <About />}
       </div>
     </div>
   );
