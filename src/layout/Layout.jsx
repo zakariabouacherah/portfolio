@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
+import Portfolio from "../sections/Portfolio";
 
 const Layout = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -29,6 +30,7 @@ const Layout = () => {
         </div>
         {activeSection === "hero" && <Hero />}
         {activeSection === "about" && <About />}
+        {activeSection === "portfolio" && <Portfolio />}
       </div>
     </div>
   );
