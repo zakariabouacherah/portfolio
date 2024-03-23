@@ -1,6 +1,4 @@
-/* .child {
-  display: none;
+::selection {
+  color: white;
+  background-color: #ffb331;
 }
-.parent:hover .child {
-  display: block;
-} */

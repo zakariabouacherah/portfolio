@@ -19,7 +19,7 @@ const Layout = () => {
   console.log(activeSection);
 
   return (
-    <div className={`${darkMode && "dark"} `}>
+    <div className={`${darkMode && "dark"} transition-colors duration-100 `}>
       <div className=" bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200">
         <div className="fixed bottom-0 lg:top-0 lg:right-0">
           <Navigation
