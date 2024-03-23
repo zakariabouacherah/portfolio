@@ -8,7 +8,7 @@ import SkillItem from "../components/SkillItem";
 const About = () => {
   return (
     <section className="w-full min-h-screen ">
-      <div className="w-full flex items-center justify-center py-14">
+      <div className="w-full flex items-center justify-center py-20">
         <Heading title="About" subTitle="resume" highlighted="me" />
       </div>
       <div className="flex items-center justify-center px-20">

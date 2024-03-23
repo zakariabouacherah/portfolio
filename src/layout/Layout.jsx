@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Portfolio from "../sections/Portfolio";
+import Contact from "../sections/Contact";
 
 const Layout = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -31,6 +32,7 @@ const Layout = () => {
         {activeSection === "hero" && <Hero />}
         {activeSection === "about" && <About />}
         {activeSection === "portfolio" && <Portfolio />}
+        {activeSection === "contact" && <Contact />}
       </div>
     </div>
   );

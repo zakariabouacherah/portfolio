@@ -7,7 +7,7 @@ import DataDriven from "../assets/datadriven.png";
 const Portfolio = () => {
   return (
     <section className="w-full min-h-screen flex items-center flex-col ">
-      <div className="w-full flex items-center justify-center py-14">
+      <div className="w-full flex items-center justify-center py-20">
         <Heading title="My" subTitle="works" highlighted="portfolio" />
       </div>
       <div className="flex items-center justify-center gap-6 px-20 max-w-7xl">
