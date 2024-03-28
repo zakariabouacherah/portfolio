@@ -7,8 +7,9 @@ const WorkItem = ({ imgPath, name, descreption, demoLink, repoLink }) => {
         <img
           src={imgPath}
           alt={name}
-          className="relative w-full h-full object-cover group-hover:scale-105 transition-all duration-100 ease-in"
+          className="relative w-full h-full object-cover group-hover:scale-105 transition-all duration-200 ease-linear"
         />
+        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-[#0008] to-transparent "></div>
       </div>
       <div className="p-6 bg-neutral-200 dark:bg-neutral-700">
         <div className="text-2xl font-bold mb-2 uppercase text-dark dark:text-white">

@@ -2,9 +2,9 @@ import React from "react";
 import Button from "../components/Button";
 import { TbArrowRight } from "react-icons/tb";
 
-const Hero = () => {
+const Hero = ({ onClick }) => {
   return (
-    <section id="hero" className="w-full h-screen flex">
+    <section id="hero" className="w-full h-screen flex z-10">
       <div className="w-[45%] p-12 relative flex items-center justify-center ">
         <div className="absolute w-[60%] h-full skew-x-12 top-0 -left-28 bg-primary"></div>
         <div className="relative max-w-[500px] h-full rounded-2xl flex items-center justify-center  overflow-hidden">
@@ -33,7 +33,11 @@ const Hero = () => {
           latest technologies to deliver high-quality solutions that positively
           impact users' lives.
         </div>
-        <Button icon={<TbArrowRight />} label={"More About Me"} />
+        <Button
+          icon={<TbArrowRight />}
+          label={"More About Me"}
+          onClick={onClick}
+        />
       </div>
     </section>
   );

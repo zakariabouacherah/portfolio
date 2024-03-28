@@ -21,7 +21,7 @@ const Layout = () => {
   return (
     <div className={`${darkMode && "dark"} transition-colors duration-100 `}>
       <div className=" bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200">
-        <div className="fixed bottom-0 lg:top-0 lg:right-0">
+        <div className="fixed bottom-0 lg:top-0 lg:right-0 z-20">
           <Navigation
             darkMode={darkMode}
             toggleDarkMode={toggleDarkMode}
@@ -29,7 +29,9 @@ const Layout = () => {
             handleButtonClick={handleButtonClick}
           />
         </div>
-        {activeSection === "hero" && <Hero />}
+        {activeSection === "hero" && (
+          <Hero onClick={() => setActiveSection("about")} />
+        )}
         {activeSection === "about" && <About />}
         {activeSection === "portfolio" && <Portfolio />}
         {activeSection === "contact" && <Contact />}

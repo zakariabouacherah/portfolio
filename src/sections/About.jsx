@@ -4,15 +4,16 @@ import Button from "../components/Button";
 import { TbDownload } from "react-icons/tb";
 import StateItem from "../components/StateItem";
 import SkillItem from "../components/SkillItem";
+import CV from "../assets/BOUACHERAH's RESUME.pdf";
 
 const About = () => {
   return (
-    <section className="w-full min-h-screen ">
+    <section className="w-full min-h-screen z-10 ">
       <div className="w-full flex items-center justify-center py-20">
         <Heading title="About" subTitle="resume" highlighted="me" />
       </div>
       <div className="flex items-center justify-center px-20">
-        <div className="w-[50%] flex justify-center flex-col gap-8 ">
+        <div className="w-[50%] flex justify-center items-center flex-col gap-8 ">
           <div className="font-semibold text-2xl tracking-wide">
             PERSONAL INFOS
           </div>
@@ -53,14 +54,27 @@ const About = () => {
             </div>
           </div>
           <div>
-            <Button
+            {/* <Button
               label="download cv"
               icon={<TbDownload />}
               onClick={() => {}}
-            />
+            /> */}
+            <a
+              href={CV}
+              download
+              className="relative group flex items-center justify-center py-3 pl-8 pr-[70px] rounded-full border-primary border-[1.5px] overflow-hidden"
+            >
+              <span className="relative font-semibold text-base uppercase group-hover:text-gray-100 z-10 ">
+                download cv
+              </span>
+              <span className="absolute top-0 right-0 h-full bg-primary w-[48px] flex items-center justify-center rounded-full text-2xl text-gray-100  z-10">
+                <TbDownload />
+              </span>
+              <span className="absolute right-0 top-0 w-0 h-full bg-primary group-hover:w-full transition-all duration-500 z-0"></span>
+            </a>
           </div>
         </div>
-        <div className="max-w-[600px] grid grid-cols-2 gap-6">
+        <div className="max-w-[600px]  grid-cols-2 gap-6 hidden">
           <StateItem label="years of experience" number={"12"} />
           <StateItem label="Completed projects" number={"02"} />
           <StateItem label="happy customers" number={"10"} />
