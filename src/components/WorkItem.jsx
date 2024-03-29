@@ -1,8 +1,26 @@
-import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
-const WorkItem = ({ imgPath, name, descreption, demoLink, repoLink }) => {
+const WorkItem = ({
+  imgPath,
+  name,
+  descreption,
+  demoLink,
+  repoLink,
+  delay,
+}) => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="relative group lg:w-[500px] rounded-2xl overflow-hidden">
+    <div
+      data-aos="flip-left"
+      data-aos-duration="1000"
+      data-aos-easing="ease"
+      data-aos-delay={delay}
+      className="relative group lg:w-[500px] rounded-2xl overflow-hidden"
+    >
       <div className="w-full h-full relative overflow-hidden">
         <img
           src={imgPath}

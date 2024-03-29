@@ -1,14 +1,19 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Heading from "../components/Heading";
 import { TbMailOpened, TbMapPin2, TbPhoneCall, TbSend } from "react-icons/tb";
 import ContactItem from "../components/ContactItem";
 import Button from "../components/Button";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const form = useRef();
   const [errors, setErrors] = useState({});
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   const validateForm = () => {
     const errors = {};
@@ -52,10 +57,20 @@ const Contact = () => {
 
   return (
     <section className="w-full min-h-screen flex items-center flex-col z-10">
-      <div className="w-full flex items-center justify-center py-20">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-duration="700"
+        data-aos-easing="ease"
+        className="w-full flex items-center justify-center py-20"
+      >
         <Heading title="get in" subTitle="contact" highlighted="touch" />
       </div>
-      <div className="flex flex-col lg:flex-row items-start justify-center gap-16 px-6 lg:px-20 pb-20 max-w-7xl">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-easing="ease"
+        className="flex flex-col lg:flex-row items-start justify-center gap-16 px-6 lg:px-20 pb-20 max-w-7xl"
+      >
         <div className="lg:w-[35%] ">
           <div className="font-semibold text-2xl tracking-wide mb-2">
             DON'T BE SHY !

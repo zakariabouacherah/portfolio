@@ -5,6 +5,8 @@ import About from "../sections/About";
 import Portfolio from "../sections/Portfolio";
 import Contact from "../sections/Contact";
 import { TbMoon, TbSunHigh } from "react-icons/tb";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Layout = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -14,10 +16,8 @@ const Layout = () => {
   };
 
   const handleButtonClick = (section) => {
-    window.localStorage.setItem("section", section);
     setActiveSection(section);
   };
-  console.log(activeSection);
 
   return (
     <div

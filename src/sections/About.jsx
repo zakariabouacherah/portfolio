@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Heading from "../components/Heading";
 import { TbDownload } from "react-icons/tb";
 import StateItem from "../components/StateItem";
 import SkillItem from "../components/SkillItem";
 import CV from "../assets/BOUACHERAH's RESUME.pdf";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section className="w-full min-h-screen z-10 ">
-      <div className="w-full flex items-center justify-center py-20">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-duration="700"
+        data-aos-easing="ease"
+        className="w-full flex items-center justify-center py-20"
+      >
         <Heading title="About" subTitle="resume" highlighted="me" />
       </div>
-      <div className="flex items-center justify-center px-6 lg:px-20">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-easing="ease"
+        className="flex items-center justify-center px-6 lg:px-20"
+      >
         <div className="lg:w-[50%] flex justify-center items-center flex-col gap-8 ">
           <div className="font-semibold text-2xl tracking-wide">
             PERSONAL INFOS
@@ -79,7 +94,12 @@ const About = () => {
           <StateItem label="happy customers" number={"10"} />
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col px-6 lg:px-20 mt-28 pb-20">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-easing="ease"
+        className="flex items-center justify-center flex-col px-6 lg:px-20 mt-28 pb-20"
+      >
         <div className="font-semibold text-2xl tracking-wide">
           SKILLS & TOOLS
         </div>
