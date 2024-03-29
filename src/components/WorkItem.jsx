@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkItem = ({ imgPath, name, descreption, demoLink, repoLink }) => {
   return (
-    <div className="relative group w-[500px] rounded-2xl overflow-hidden">
+    <div className="relative group lg:w-[500px] rounded-2xl overflow-hidden">
       <div className="w-full h-full relative overflow-hidden">
         <img
           src={imgPath}

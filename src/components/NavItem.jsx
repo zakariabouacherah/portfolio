@@ -15,7 +15,7 @@ const NavItem = ({ label, icon, isActive, onClick }) => {
       >
         {icon}
       </div>
-      <div className="opacity-0 tracking-wider z-0 flex group-hover:opacity-100 h-12 pl-6 pr-16 -mr-10 transition-all duration-300 items-center justify-center absolute group-hover:right-full right-[39px] bg-primary text-neutral-100 font-semibold text-sm rounded-full uppercase ease-out ">
+      <div className="opacity-0 hidden tracking-wider z-0 lg:flex group-hover:opacity-100 h-12 pl-6 pr-16 -mr-10 transition-all duration-300 items-center justify-center absolute group-hover:right-full right-[39px] bg-primary text-neutral-100 font-semibold text-sm rounded-full uppercase ease-out ">
         {label}
       </div>
     </div>

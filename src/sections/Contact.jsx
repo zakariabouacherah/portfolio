@@ -55,8 +55,8 @@ const Contact = () => {
       <div className="w-full flex items-center justify-center py-20">
         <Heading title="get in" subTitle="contact" highlighted="touch" />
       </div>
-      <div className="flex items-start justify-center gap-16 px-20 max-w-7xl">
-        <div className="w-[35%] ">
+      <div className="flex flex-col lg:flex-row items-start justify-center gap-16 px-6 lg:px-20 pb-20 max-w-7xl">
+        <div className="lg:w-[35%] ">
           <div className="font-semibold text-2xl tracking-wide mb-2">
             DON'T BE SHY !
           </div>
@@ -85,13 +85,12 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="w-[65%]">
+        <div className="w-full lg:w-[65%]">
           <form
             ref={form}
-            // onSubmit={sendEmail}
-            className="grid grid-cols-2 gap-x-4 gap-y-8 mb-8"
+            className="grid grid-cols-2 gap-2 lg:gap-x-4 lg:gap-y-8 mb-8"
           >
-            <div className="relative">
+            <div className="relative col-span-2 lg:col-span-1">
               <input
                 type="text"
                 name="name"
@@ -104,7 +103,7 @@ const Contact = () => {
                 </span>
               )}
             </div>
-            <div className="relative">
+            <div className="relative col-span-2 lg:col-span-1">
               <input
                 type="text"
                 name="email"

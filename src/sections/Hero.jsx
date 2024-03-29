@@ -4,10 +4,13 @@ import { TbArrowRight } from "react-icons/tb";
 
 const Hero = ({ onClick }) => {
   return (
-    <section id="hero" className="w-full h-screen flex z-10">
-      <div className="w-[45%] p-12 relative flex items-center justify-center ">
-        <div className="absolute w-[60%] h-full skew-x-12 top-0 -left-28 bg-primary"></div>
-        <div className="relative max-w-[500px] h-full rounded-2xl flex items-center justify-center  overflow-hidden">
+    <section
+      id="hero"
+      className="w-full min-h-screen flex flex-col items-center lg:justify-center pb-20 lg:pb-0 lg:flex-row z-10"
+    >
+      <div className="lg:w-[45%] w-[70%] p-12 relative flex items-center justify-center lg:h-screen ">
+        <div className="absolute hidden lg:block lg:w-[60%] w-screen h-full lg:skew-x-12 top-0 lg:-left-28 bg-primary"></div>
+        <div className="relative max-w-[500px] h-[80%] rounded-full lg:rounded-2xl flex items-center justify-center  overflow-hidden border-primary border-4 lg:border-0">
           <img
             className="w-full h-full object-cover"
             src="https://images.squarespace-cdn.com/content/v1/607c008b69fa285adb35d089/2cd59148-0884-4ce5-930e-23da28991a4b/ALONZO-LICHT.jpg?format=1000w"
@@ -15,10 +18,10 @@ const Hero = ({ onClick }) => {
           />
         </div>
       </div>
-      <div className="w-[55%] text-gray-800 dark:text-gray-200 flex items-start flex-col justify-center gap-6 mr-24">
+      <div className="lg:w-[55%] text-gray-800 dark:text-gray-200 flex items-center lg:items-start flex-col justify-center gap-6 px-6 lg:px-0 lg:mr-24">
         <div className="flex items-center gap-4">
-          <div className="h-1.5 w-12 bg-primary rounded-xl"></div>
-          <div className="text-5xl font-extrabold">
+          <div className="h-1.5 w-12 hidden lg:block bg-primary rounded-xl"></div>
+          <div className="lg:text-5xl text-3xl font-extrabold text-center lg:text-start">
             <span className="text-primary">
               I'M BOUACHERAH <br /> ZAKARIA.
             </span>
@@ -26,7 +29,7 @@ const Hero = ({ onClick }) => {
             <span>WEB DEVELOPER</span>
           </div>
         </div>
-        <div className="max-w-[660px] leading-relaxed text-lg font-normal">
+        <div className="max-w-[660px] leading-relaxed lg:text-lg font-normal text-center lg:text-start">
           As a Moroccan web developer, I focus on creating clean, user-friendly
           websites and applications. With a passion for crafting excellent
           software, I aim to improve digital experiences. I stay updated on the

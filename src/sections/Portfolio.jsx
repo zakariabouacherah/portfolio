@@ -10,7 +10,7 @@ const Portfolio = () => {
       <div className="w-full flex items-center justify-center py-20">
         <Heading title="My" subTitle="works" highlighted="portfolio" />
       </div>
-      <div className="flex items-center justify-center gap-6 px-20 max-w-7xl">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 px-6 pb-20 lg:px-20 max-w-7xl">
         <WorkItem
           imgPath={Tajin}
           name="Tajine Tales"

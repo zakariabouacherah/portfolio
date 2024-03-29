@@ -1,6 +1,5 @@
 import React from "react";
 import Heading from "../components/Heading";
-import Button from "../components/Button";
 import { TbDownload } from "react-icons/tb";
 import StateItem from "../components/StateItem";
 import SkillItem from "../components/SkillItem";
@@ -12,12 +11,12 @@ const About = () => {
       <div className="w-full flex items-center justify-center py-20">
         <Heading title="About" subTitle="resume" highlighted="me" />
       </div>
-      <div className="flex items-center justify-center px-20">
-        <div className="w-[50%] flex justify-center items-center flex-col gap-8 ">
+      <div className="flex items-center justify-center px-6 lg:px-20">
+        <div className="lg:w-[50%] flex justify-center items-center flex-col gap-8 ">
           <div className="font-semibold text-2xl tracking-wide">
             PERSONAL INFOS
           </div>
-          <div className="grid grid-cols-2 gap-x-0 gap-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-0 gap-y-4">
             <div className="font-light">
               First Name : <span className="font-semibold"> Zakaria </span>
             </div>
@@ -80,11 +79,11 @@ const About = () => {
           <StateItem label="happy customers" number={"10"} />
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col px-20 mt-28 pb-20">
+      <div className="flex items-center justify-center flex-col px-6 lg:px-20 mt-28 pb-20">
         <div className="font-semibold text-2xl tracking-wide">
           SKILLS & TOOLS
         </div>
-        <div className="grid grid-cols-5 gap-x-20 gap-y-12 mt-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-x-20 lg:gap-y-12 mt-12">
           <SkillItem label="html" number={80} />
           <SkillItem label="css" number={87} />
           <SkillItem label="Javascript" number={84} />
