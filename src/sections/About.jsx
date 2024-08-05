@@ -1,6 +1,18 @@
 import React, { useEffect } from "react";
 import Heading from "../components/Heading";
-import { TbDownload } from "react-icons/tb";
+import {
+  TbDownload,
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandJavascript,
+  TbBrandReact,
+  TbBrandPhp,
+  TbBrandLaravel,
+  TbBrandTailwind,
+  TbBrandMysql,
+  TbBrandMongodb,
+  TbBrandGithub,
+} from "react-icons/tb";
 import StateItem from "../components/StateItem";
 import SkillItem from "../components/SkillItem";
 import CV from "../assets/BOUACHERAH's RESUME.pdf";
@@ -68,11 +80,6 @@ const About = () => {
             </div>
           </div>
           <div>
-            {/* <Button
-              label="download cv"
-              icon={<TbDownload />}
-              onClick={() => {}}
-            /> */}
             <a
               href={CV}
               download
@@ -89,9 +96,9 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-[600px]  grid-cols-2 gap-6 hidden">
-          <StateItem label="years of experience" number={"12"} />
-          <StateItem label="Completed projects" number={"02"} />
-          <StateItem label="happy customers" number={"10"} />
+          <StateItem label="years of experience" icon={"12"} />
+          <StateItem label="Completed projects" icon={"02"} />
+          <StateItem label="happy customers" icon={"10"} />
         </div>
       </div>
       <div
@@ -104,16 +111,16 @@ const About = () => {
           SKILLS & TOOLS
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-x-20 lg:gap-y-12 mt-12">
-          <SkillItem label="html" number={80} />
-          <SkillItem label="css" number={87} />
-          <SkillItem label="Javascript" number={84} />
-          <SkillItem label="react" number={79} />
-          <SkillItem label="php" number={65} />
-          <SkillItem label="laravel" number={55} />
-          <SkillItem label="Tailwind" number={90} />
-          <SkillItem label="Mysql" number={68} />
-          <SkillItem label="Mongodb" number={72} />
-          <SkillItem label="Github" number={68} />
+          <SkillItem label="html" icon={<TbBrandHtml5 />} />
+          <SkillItem label="css" icon={<TbBrandCss3 />} />
+          <SkillItem label="Javascript" icon={<TbBrandJavascript />} />
+          <SkillItem label="react" icon={<TbBrandReact />} />
+          <SkillItem label="php" icon={<TbBrandPhp />} />
+          <SkillItem label="laravel" icon={<TbBrandLaravel />} />
+          <SkillItem label="Tailwind" icon={<TbBrandTailwind />} />
+          <SkillItem label="Mysql" icon={<TbBrandMysql />} />
+          <SkillItem label="Mongodb" icon={<TbBrandMongodb />} />
+          <SkillItem label="Github" icon={<TbBrandGithub />} />
         </div>
       </div>
     </section>

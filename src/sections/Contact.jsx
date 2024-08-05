@@ -103,7 +103,7 @@ const Contact = () => {
         <div className="w-full lg:w-[65%]">
           <form
             ref={form}
-            className="grid grid-cols-2 gap-2 lg:gap-x-4 lg:gap-y-8 mb-8"
+            className="grid grid-cols-2 gap-5 lg:gap-x-4 lg:gap-y-8 mb-8"
           >
             <div className="relative col-span-2 lg:col-span-1">
               <input
@@ -113,7 +113,7 @@ const Contact = () => {
                 className="relative w-full py-3 px-6 rounded-full placeholder: placeholder:uppercase placeholder:opacity-60 bg-neutral-50 dark:bg-neutral-700 outline-none border-[1px] border-neutral-300 dark:border-transparent focus:border-primary focus:dark:border-primary"
               />
               {errors.name && (
-                <span className="text-rose-600 text-sm mt-1 absolute bottom-[-20px] left-4 ">
+                <span className="text-rose-600 text-xs lg:text-sm mt-1 absolute bottom-[-16px] left-4 ">
                   {errors.name}
                 </span>
               )}
@@ -126,7 +126,7 @@ const Contact = () => {
                 className="relative w-full py-3 px-6 rounded-full placeholder: placeholder:uppercase placeholder:opacity-60 bg-neutral-50 dark:bg-neutral-700 outline-none border-[1px] border-neutral-300 dark:border-transparent focus:border-primary focus:dark:border-primary"
               />
               {errors.email && (
-                <span className="text-rose-600 text-sm mt-1 absolute bottom-[-20px] left-4 ">
+                <span className="text-rose-600 text-xs lg:text-sm mt-1 absolute bottom-[-16px] left-4 ">
                   {errors.email}
                 </span>
               )}
@@ -139,7 +139,7 @@ const Contact = () => {
                 className="w-full relative py-3 px-6 rounded-full placeholder: placeholder:uppercase placeholder:opacity-60 bg-neutral-50 dark:bg-neutral-700 outline-none border-[1px] border-neutral-300 dark:border-transparent focus:border-primary focus:dark:border-primary"
               />
               {errors.subject && (
-                <span className="text-rose-600 text-sm mt-1 absolute bottom-[-20px] left-4 ">
+                <span className="text-rose-600 text-xs lg:text-sm mt-1 absolute bottom-[-16px] left-4 ">
                   {errors.subject}
                 </span>
               )}
@@ -152,7 +152,7 @@ const Contact = () => {
                 className="w-full relative resize-none py-3 px-6 rounded-3xl placeholder: placeholder:uppercase placeholder:opacity-60 bg-neutral-50 dark:bg-neutral-700 outline-none border-[1px] border-neutral-300 dark:border-transparent focus:border-primary focus:dark:border-primary"
               ></textarea>
               {errors.message && (
-                <span className="text-rose-600 text-sm mt-1 absolute bottom-[-20px] left-4 ">
+                <span className="text-rose-600 text-xs lg:text-sm mt-1 absolute bottom-[-16px] left-4 ">
                   {errors.message}
                 </span>
               )}
