@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { TbArrowRight } from "react-icons/tb";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import me from "../assets/zakaria.jpg";
 
 const Hero = ({ onClick }) => {
   useEffect(() => {
@@ -21,11 +22,7 @@ const Hero = ({ onClick }) => {
           data-aos-easing="ease"
           className="relative max-w-[500px] h-[80%] rounded-full lg:rounded-2xl flex items-center justify-center  overflow-hidden border-primary border-4 lg:border-0"
         >
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.squarespace-cdn.com/content/v1/607c008b69fa285adb35d089/2cd59148-0884-4ce5-930e-23da28991a4b/ALONZO-LICHT.jpg?format=1000w"
-            alt="portrait"
-          />
+          <img className="w-full h-full object-cover" src={me} alt="portrait" />
         </div>
       </div>
       <div
