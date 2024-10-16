@@ -19,9 +19,9 @@ const WorkItem = ({
       data-aos-duration="1000"
       data-aos-easing="ease"
       data-aos-delay={delay}
-      className="relative group lg:w-[500px] rounded-2xl overflow-hidden"
+      className="relative group lg:w-[500px] h-full rounded-2xl overflow-hidden"
     >
-      <div className="w-full h-full relative overflow-hidden">
+      <div className="w-full h-[260px] relative overflow-hidden">
         <img
           src={imgPath}
           alt={name}
@@ -29,7 +29,7 @@ const WorkItem = ({
         />
         <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-[#0008] to-transparent "></div>
       </div>
-      <div className="p-6 bg-neutral-200 dark:bg-neutral-700">
+      <div className="p-6 bg-neutral-200 dark:bg-neutral-700 h-full">
         <div className="text-2xl font-bold mb-2 uppercase text-dark dark:text-white">
           {name}
         </div>

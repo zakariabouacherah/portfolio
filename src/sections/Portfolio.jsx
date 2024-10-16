@@ -4,6 +4,7 @@ import WorkItem from "../components/WorkItem";
 import Tajin from "../assets/tajinetales.png";
 import DataDriven from "../assets/datadriven.png";
 import Oussama from "../assets/oussama.png";
+import Luxe from "../assets/luxe-electro.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +22,7 @@ const Portfolio = () => {
       >
         <Heading title="My" subTitle="works" highlighted="portfolio" />
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-6 px-6 pb-20 md:px-20 max-w-7xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 pb-20 md:px-20 max-w-7xl">
         <WorkItem
           imgPath={Tajin}
           name="Tajine Tales"
@@ -44,6 +45,14 @@ const Portfolio = () => {
           repoLink={"https://github.com/zakariabouacherah/oss-portfolio"}
           descreption="Oussama Ichid Portfolio: A contemporary portfolio designed for a friend, featuring a dynamic layout and modern styling with React and Tailwind CSS. This project emphasizes responsive design and user-friendly navigation, reflecting the seamless blend of functionality and aesthetics in today’s web development."
           delay={600}
+        />
+        <WorkItem
+          imgPath={Luxe}
+          name="Luxe electro"
+          demoLink={"https://luxe-electro.vercel.app/"}
+          repoLink={"#"}
+          descreption="Luxe Electro: An ecommerce solution crafted with the MERN stack, utilizing Tailwind CSS for responsive design and Cloudinary for seamless image storage. Users can effortlessly navigate through a range of home appliances, add items to their cart, and complete their orders via an intuitive checkout system, with full control through an admin dashboard."
+          delay={900}
         />
       </div>
     </section>
