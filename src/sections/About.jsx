@@ -12,6 +12,11 @@ import {
   TbBrandMysql,
   TbBrandMongodb,
   TbBrandGithub,
+  TbBrandPython,
+  TbBrandNextjs,
+  TbBrandTypescript,
+  TbBrandDjango,
+  TbBrandNodejs,
 } from "react-icons/tb";
 import StateItem from "../components/StateItem";
 import SkillItem from "../components/SkillItem";
@@ -24,7 +29,7 @@ const About = () => {
     Aos.init();
   }, []);
   return (
-    <section className="w-full min-h-screen z-10 ">
+    <section className="w-full min-h-screen z-10 overflow-hidden ">
       <div
         data-aos="zoom-in-down"
         data-aos-duration="700"
@@ -115,8 +120,13 @@ const About = () => {
           <SkillItem label="css" icon={<TbBrandCss3 />} />
           <SkillItem label="Javascript" icon={<TbBrandJavascript />} />
           <SkillItem label="react" icon={<TbBrandReact />} />
+          <SkillItem label="nextjs" icon={<TbBrandNextjs />} />
           <SkillItem label="php" icon={<TbBrandPhp />} />
           <SkillItem label="laravel" icon={<TbBrandLaravel />} />
+          <SkillItem label="python" icon={<TbBrandPython />} />
+          <SkillItem label="django" icon={<TbBrandDjango />} />
+          <SkillItem label="typescript" icon={<TbBrandTypescript />} />
+          <SkillItem label="nodejs" icon={<TbBrandNodejs />} />
           <SkillItem label="Tailwind" icon={<TbBrandTailwind />} />
           <SkillItem label="Mysql" icon={<TbBrandMysql />} />
           <SkillItem label="Mongodb" icon={<TbBrandMongodb />} />
