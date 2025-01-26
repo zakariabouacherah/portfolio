@@ -26,33 +26,27 @@ const Portfolio = () => {
         <WorkItem
           imgPath={Tajin}
           name="Tajine Tales"
-          repoLink={"https://github.com/zakariabouacherah/tajine-tales"}
           descreption="This is a fully operational culinary platform, TajineTales, employing React.js for the frontend and Express.js with a REST API for the backend, coupled with MongoDB integration for secure data management."
           delay={0}
         />
         <WorkItem
           imgPath={DataDriven}
           name="Data Driven"
-          demoLink={"https://data-driven.onrender.com/"}
-          repoLink={"https://github.com/zakariabouacherah/digital-agency"}
           descreption="DataDriven: A dynamic showcase of modernity in digital agency websites. Built using React and styled with Tailwind CSS. Witness the future of web design unfold with DataDriven's sleek, data-centric components."
           delay={300}
         />
         <WorkItem
           imgPath={Oussama}
           name="Oussama Ichid Portfolio"
-          demoLink={"https://ossama-ichid.onrender.com/"}
-          repoLink={"https://github.com/zakariabouacherah/oss-portfolio"}
           descreption="Oussama Ichid Portfolio: A contemporary portfolio designed for a friend, featuring a dynamic layout and modern styling with React and Tailwind CSS. This project emphasizes responsive design and user-friendly navigation, reflecting the seamless blend of functionality and aesthetics in today’s web development."
           delay={600}
         />
         <WorkItem
           imgPath={Luxe}
           name="Luxe electro"
-          demoLink={"https://luxe-electro.vercel.app/"}
-          repoLink={"#"}
           descreption="Luxe Electro: An ecommerce solution crafted with the MERN stack, utilizing Tailwind CSS for responsive design and Cloudinary for seamless image storage. Users can effortlessly navigate through a range of home appliances, add items to their cart, and complete their orders via an intuitive checkout system, with full control through an admin dashboard."
           delay={900}
+          projectLink={"/projects/luxe-electro"}
         />
       </div>
     </section>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { TbHome, TbUser, TbBriefcase, TbMailOpened } from "react-icons/tb";
 import NavItem from "../components/NavItem";
 

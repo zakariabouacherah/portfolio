@@ -1,25 +1,25 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "./Button";
+import { TbReportSearch } from "react-icons/tb";
 
-const WorkItem = ({
-  imgPath,
-  name,
-  descreption,
-  demoLink,
-  repoLink,
-  delay,
-}) => {
+const WorkItem = ({ imgPath, name, descreption, delay, projectLink }) => {
   useEffect(() => {
     Aos.init();
   }, []);
+  const navigate = useNavigate();
+  const onClick = () => {
+    navigate(projectLink);
+  };
   return (
     <div
       data-aos="flip-left"
       data-aos-duration="1000"
       data-aos-easing="ease"
       data-aos-delay={delay}
-      className="relative group lg:w-[500px] h-full rounded-2xl overflow-hidden"
+      className="relative lg:w-[500px] h-full rounded-2xl overflow-hidden"
     >
       <div className="w-full h-[260px] relative overflow-hidden">
         <img
@@ -36,8 +36,8 @@ const WorkItem = ({
         <div className="text-base font-light opacity-80 mb-4">
           {descreption}
         </div>
-        <div className="flex items-center gap-4">
-          <a
+        <div>
+          {/* <a
             href={demoLink}
             target="_blank"
             className="py-2 px-4 bg-primary text-white rounded-xl hover:bg-primary1 border-[1px] border-transparent cursor-pointer"
@@ -50,7 +50,18 @@ const WorkItem = ({
             className="py-2 px-4 border-primary border-[1px] rounded-xl hover:bg-primary hover:text-white"
           >
             View Code
-          </a>
+          </a> */}
+          {/* <Link
+            className="py-2 px-4 bg-primary text-white rounded-xl hover:bg-primary1 border-[1px] border-transparent cursor-pointer"
+            to={projectLink}
+          >
+            More details
+          </Link> */}
+          <Button
+            icon={<TbReportSearch />}
+            label={"More details"}
+            onClick={onClick}
+          />
         </div>
       </div>
     </div>
